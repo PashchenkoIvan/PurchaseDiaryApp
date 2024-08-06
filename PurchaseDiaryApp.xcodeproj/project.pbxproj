@@ -13,6 +13,8 @@
 		63DB54092C62307500FE34CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 63DB54082C62307500FE34CC /* Base */; };
 		63DB540B2C62307700FE34CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DB540A2C62307700FE34CC /* Assets.xcassets */; };
 		63DB540E2C62307700FE34CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 63DB540D2C62307700FE34CC /* Base */; };
+		63DB54162C62313800FE34CC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 63DB54152C62313800FE34CC /* Podfile */; };
+		641FD9B0B1E9FFBF78D4A5E5 /* Pods_PurchaseDiaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8E9BE76E2B7E22E152B936 /* Pods_PurchaseDiaryApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		63DB540A2C62307700FE34CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DB540D2C62307700FE34CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DB540F2C62307700FE34CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DB54152C62313800FE34CC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		896FBA5A8F76794649579B0B /* Pods-PurchaseDiaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseDiaryApp.release.xcconfig"; path = "Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp.release.xcconfig"; sourceTree = "<group>"; };
+		B0820CED146A9A0833C2F2EF /* Pods-PurchaseDiaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseDiaryApp.debug.xcconfig"; path = "Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8E9BE76E2B7E22E152B936 /* Pods_PurchaseDiaryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchaseDiaryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641FD9B0B1E9FFBF78D4A5E5 /* Pods_PurchaseDiaryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,11 @@
 		63DB53F52C62307500FE34CC = {
 			isa = PBXGroup;
 			children = (
+				63DB54152C62313800FE34CC /* Podfile */,
 				63DB54002C62307500FE34CC /* PurchaseDiaryApp */,
 				63DB53FF2C62307500FE34CC /* Products */,
+				EFFDC004606670B87B969E32 /* Pods */,
+				7C3EAE4217DE2C1DC4F1EAAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +77,23 @@
 			path = PurchaseDiaryApp;
 			sourceTree = "<group>";
 		};
+		7C3EAE4217DE2C1DC4F1EAAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E9BE76E2B7E22E152B936 /* Pods_PurchaseDiaryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFFDC004606670B87B969E32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0820CED146A9A0833C2F2EF /* Pods-PurchaseDiaryApp.debug.xcconfig */,
+				896FBA5A8F76794649579B0B /* Pods-PurchaseDiaryApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63DB54122C62307700FE34CC /* Build configuration list for PBXNativeTarget "PurchaseDiaryApp" */;
 			buildPhases = (
+				27B84C3EFA00C8DB6BDDC43A /* [CP] Check Pods Manifest.lock */,
 				63DB53FA2C62307500FE34CC /* Sources */,
 				63DB53FB2C62307500FE34CC /* Frameworks */,
 				63DB53FC2C62307500FE34CC /* Resources */,
@@ -127,11 +155,37 @@
 			files = (
 				63DB540B2C62307700FE34CC /* Assets.xcassets in Resources */,
 				63DB540E2C62307700FE34CC /* Base in Resources */,
+				63DB54162C62313800FE34CC /* Podfile in Resources */,
 				63DB54092C62307500FE34CC /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27B84C3EFA00C8DB6BDDC43A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PurchaseDiaryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63DB53FA2C62307500FE34CC /* Sources */ = {
@@ -287,12 +341,14 @@
 		};
 		63DB54132C62307700FE34CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0820CED146A9A0833C2F2EF /* Pods-PurchaseDiaryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43JJRWSTM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PurchaseDiaryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +371,14 @@
 		};
 		63DB54142C62307700FE34CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896FBA5A8F76794649579B0B /* Pods-PurchaseDiaryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43JJRWSTM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PurchaseDiaryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
