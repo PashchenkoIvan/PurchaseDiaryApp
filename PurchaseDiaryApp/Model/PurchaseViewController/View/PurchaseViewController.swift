@@ -14,7 +14,7 @@ class PurchaseViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var purchasePriceLabel: UIView!
     @IBOutlet weak var purchaseDateLabel: UILabel!
-    @IBOutlet weak var purchaseGroupLabel: UILabel!
+    @IBOutlet weak var purchaseCategory: UIView!
     
     @IBOutlet weak var mapView: MKMapView!
     

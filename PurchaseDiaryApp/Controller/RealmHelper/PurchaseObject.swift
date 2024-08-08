@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import RealmSwift
 
 class PurchaseObject: Object {
@@ -14,6 +13,10 @@ class PurchaseObject: Object {
     @Persisted var text: String
     @Persisted var cost: Double
     @Persisted var timestamp: Date
+    @Persisted var category: String
+    @Persisted var latitude: Double // Широта
+    @Persisted var longitude: Double // Долгота
+    @Persisted var purchaseDescription: String? // Описание (опциональное)
 }
 
 extension PurchaseObject {
@@ -24,15 +27,18 @@ extension PurchaseObject {
 }
 
 extension PurchaseObject {
-    static func addPurchase(text: String = "Nothing", cost: Double = 0.0) {
+    static func addPurchase(text: String? = nil, cost: Double = 0.0, latitude: Double? = nil, longitude: Double? = nil, description: String? = "Not given") {
         let newPurchase = PurchaseObject()
-        
-        newPurchase.text = text
+
+        newPurchase.text = text ?? "Not given"
         newPurchase.cost = cost
         newPurchase.timestamp = Date()
-        
+        newPurchase.latitude = latitude ?? 0.0
+        newPurchase.longitude = longitude ?? 0.0
+        newPurchase.purchaseDescription = description ?? "Not given"
+
         let realm = try! Realm()
-        
+
         try! realm.write {
             realm.add(newPurchase)
         }

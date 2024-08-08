@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6351C8132C63C01E00B4116B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8122C63C01E00B4116B /* PurchaseViewController.swift */; };
-		6351C8192C63C06E00B4116B /* PurchaseTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8182C63C06E00B4116B /* PurchaseTypeViewController.swift */; };
+		6351C8192C63C06E00B4116B /* PurchaseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8182C63C06E00B4116B /* PurchaseCategoryViewController.swift */; };
+		6351C81C2C64EDFD00B4116B /* PurchaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C81B2C64EDFD00B4116B /* PurchaseObject.swift */; };
 		639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DB2822C62352E0086A210 /* HistoryViewController.swift */; };
 		63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54012C62307500FE34CC /* AppDelegate.swift */; };
 		63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54032C62307500FE34CC /* SceneDelegate.swift */; };
@@ -23,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		6351C8122C63C01E00B4116B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
-		6351C8182C63C06E00B4116B /* PurchaseTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTypeViewController.swift; sourceTree = "<group>"; };
+		6351C8182C63C06E00B4116B /* PurchaseCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCategoryViewController.swift; sourceTree = "<group>"; };
+		6351C81B2C64EDFD00B4116B /* PurchaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseObject.swift; sourceTree = "<group>"; };
 		639DB2822C62352E0086A210 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		63DB53FE2C62307500FE34CC /* PurchaseDiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseDiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB54012C62307500FE34CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		63DB540A2C62307700FE34CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63DB540D2C62307700FE34CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63DB540F2C62307700FE34CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63DB54152C62313800FE34CC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		63DB54152C62313800FE34CC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		63DB54232C62341300FE34CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		896FBA5A8F76794649579B0B /* Pods-PurchaseDiaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseDiaryApp.release.xcconfig"; path = "Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp.release.xcconfig"; sourceTree = "<group>"; };
 		B0820CED146A9A0833C2F2EF /* Pods-PurchaseDiaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseDiaryApp.debug.xcconfig"; path = "Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,14 +64,14 @@
 			path = PurchaseViewController;
 			sourceTree = "<group>";
 		};
-		6351C80E2C63BFE900B4116B /* PurchaseTypViewController */ = {
+		6351C80E2C63BFE900B4116B /* PurchaseCategoryViewController */ = {
 			isa = PBXGroup;
 			children = (
 				6351C8162C63C05C00B4116B /* Model */,
 				6351C8152C63C04F00B4116B /* View */,
 				6351C8142C63C04800B4116B /* Controller */,
 			);
-			path = PurchaseTypViewController;
+			path = PurchaseCategoryViewController;
 			sourceTree = "<group>";
 		};
 		6351C80F2C63BFFC00B4116B /* Controller */ = {
@@ -104,7 +106,7 @@
 		6351C8152C63C04F00B4116B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6351C8182C63C06E00B4116B /* PurchaseTypeViewController.swift */,
+				6351C8182C63C06E00B4116B /* PurchaseCategoryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +116,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6351C81A2C64EDED00B4116B /* RealmHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6351C81B2C64EDFD00B4116B /* PurchaseObject.swift */,
+			);
+			path = RealmHelper;
 			sourceTree = "<group>";
 		};
 		639DB2832C62352E0086A210 /* View */ = {
@@ -184,7 +194,7 @@
 		63DB54172C62327000FE34CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6351C80E2C63BFE900B4116B /* PurchaseTypViewController */,
+				6351C80E2C63BFE900B4116B /* PurchaseCategoryViewController */,
 				6351C80D2C63BFD500B4116B /* PurchaseViewController */,
 				63DB541A2C6232E400FE34CC /* GeneralViewController */,
 				63DB541E2C62336000FE34CC /* SearchViewController */,
@@ -205,6 +215,7 @@
 		63DB54192C62327A00FE34CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6351C81A2C64EDED00B4116B /* RealmHelper */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +312,7 @@
 				63DB53FA2C62307500FE34CC /* Sources */,
 				63DB53FB2C62307500FE34CC /* Frameworks */,
 				63DB53FC2C62307500FE34CC /* Resources */,
+				B70C4E273BEAAB8F039C553B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +393,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B70C4E273BEAAB8F039C553B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -391,8 +420,9 @@
 				63DB54062C62307500FE34CC /* GeneralViewController.swift in Sources */,
 				63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */,
 				63DB54242C62341300FE34CC /* SearchViewController.swift in Sources */,
-				6351C8192C63C06E00B4116B /* PurchaseTypeViewController.swift in Sources */,
+				6351C8192C63C06E00B4116B /* PurchaseCategoryViewController.swift in Sources */,
 				639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */,
+				6351C81C2C64EDFD00B4116B /* PurchaseObject.swift in Sources */,
 				63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */,
 				6351C8132C63C01E00B4116B /* PurchaseViewController.swift in Sources */,
 			);

@@ -9,9 +9,9 @@ import UIKit
 
 class PurchaseCategoryViewController: UIViewController {
 
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var totalSpentLabel: UILabel!
-    @IBOutlet weak var groupNameLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     

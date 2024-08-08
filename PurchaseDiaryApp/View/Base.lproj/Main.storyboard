@@ -98,7 +98,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBB-9y-55J">
-                                        <rect key="frame" x="10" y="60" width="154" height="35"/>
+                                        <rect key="frame" x="10" y="60" width="176.66666666666666" height="35"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vG3-KV-O8g">
                                                 <rect key="frame" x="0.0" y="1.6666666666666643" width="25" height="32"/>
@@ -106,8 +106,8 @@
                                                     <constraint firstAttribute="width" constant="25" id="KAt-5e-AHj"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purchase_group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ump-px-U3u">
-                                                <rect key="frame" x="30" y="0.0" width="124" height="35"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purchase_category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ump-px-U3u">
+                                                <rect key="frame" x="30" y="0.0" width="146.66666666666666" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -248,6 +248,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="riP-dF-2P7" id="kEU-2v-G2a"/>
                         <outlet property="mapView" destination="qyY-YT-qHR" id="1i3-h9-4z0"/>
+                        <outlet property="purchaseCategory" destination="GBB-9y-55J" id="kjF-9Q-Ck8"/>
                         <outlet property="purchaseDateLabel" destination="pG2-0Y-kkW" id="tkw-KI-hLJ"/>
                         <outlet property="purchaseGroupLabel" destination="Ump-px-U3u" id="jPZ-ju-RTH"/>
                         <outlet property="purchaseNameLabel" destination="ycq-wZ-Omu" id="cY2-Jz-eZM"/>
@@ -258,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="3287.7862595419847" y="322.53521126760563"/>
         </scene>
-        <!--Purchase Type View Controller-->
+        <!--Purchase Category View Controller-->
         <scene sceneID="McZ-hn-BrP">
             <objects>
-                <viewController storyboardIdentifier="PurchaseTypeViewController" id="HzH-kX-7XD" customClass="PurchaseTypeViewController" customModule="PurchaseDiaryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PurchaseCategoryViewController" id="HzH-kX-7XD" customClass="PurchaseCategoryViewController" customModule="PurchaseDiaryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OuD-v5-KJd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +270,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="get-Eg-hHB">
                                 <rect key="frame" x="0.0" y="103" width="393" height="143"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mw-NU-n19">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mw-NU-n19">
                                         <rect key="frame" x="10" y="10" width="373" height="48"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
                                         <nil key="textColor"/>
@@ -367,7 +368,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="h8g-Jr-GJ3"/>
                     <connections>
-                        <outlet property="groupNameLabel" destination="2mw-NU-n19" id="quG-aW-aNx"/>
+                        <outlet property="categoryLabel" destination="2mw-NU-n19" id="hcm-dS-qvj"/>
                         <outlet property="tableView" destination="efS-Pe-g1x" id="Uh2-JP-7lG"/>
                         <outlet property="totalCountLabel" destination="e1W-dv-sBC" id="Sea-f1-mvz"/>
                         <outlet property="totalSpentLabel" destination="GaM-4D-P0n" id="ry8-OW-Ocx"/>
@@ -436,7 +437,7 @@
                                         <rect key="frame" x="14.999999999999993" y="50" width="116.33333333333331" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="total_spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8I-Ng-XQ2">
-                                                <rect key="frame" x="29.999999999999993" y="0.0" width="86.333333333333343" height="30"/>
+                                                <rect key="frame" x="29.999999999999993" y="0.0" width="86.333333333333314" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -505,7 +506,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2e5-5c-A4g">
                                 <rect key="frame" x="0.0" y="273" width="393" height="496"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase types" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-DJ-fxo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-DJ-fxo">
                                         <rect key="frame" x="10" y="0.0" width="373" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="FX2-e3-BFW"/>
