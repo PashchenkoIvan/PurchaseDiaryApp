@@ -1,16 +1,13 @@
+// ViewController.swift
+// PurchaseDiaryApp
 //
-//  ViewController.swift
-//  PurchaseDiaryApp
-//
-//  Created by Пащенко Иван on 06.08.2024.
+// Created by Пащенко Иван on 06.08.2024.
 //
 
 import UIKit
 
 class GeneralViewController: UIViewController {
-    
-    @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
+
     
     @IBOutlet weak var totalSpentLabel: UILabel!
     @IBOutlet weak var totalCountLabel: UILabel!
@@ -19,9 +16,6 @@ class GeneralViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
-

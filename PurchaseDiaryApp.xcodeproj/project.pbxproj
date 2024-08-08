@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6351C8132C63C01E00B4116B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8122C63C01E00B4116B /* PurchaseViewController.swift */; };
+		6351C8192C63C06E00B4116B /* PurchaseTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8182C63C06E00B4116B /* PurchaseTypeViewController.swift */; };
 		639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DB2822C62352E0086A210 /* HistoryViewController.swift */; };
 		63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54012C62307500FE34CC /* AppDelegate.swift */; };
 		63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54032C62307500FE34CC /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6351C8122C63C01E00B4116B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		6351C8182C63C06E00B4116B /* PurchaseTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTypeViewController.swift; sourceTree = "<group>"; };
 		639DB2822C62352E0086A210 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		63DB53FE2C62307500FE34CC /* PurchaseDiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseDiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB54012C62307500FE34CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6351C80D2C63BFD500B4116B /* PurchaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6351C8112C63C00600B4116B /* Model */,
+				6351C8102C63C00200B4116B /* View */,
+				6351C80F2C63BFFC00B4116B /* Controller */,
+			);
+			path = PurchaseViewController;
+			sourceTree = "<group>";
+		};
+		6351C80E2C63BFE900B4116B /* PurchaseTypViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6351C8162C63C05C00B4116B /* Model */,
+				6351C8152C63C04F00B4116B /* View */,
+				6351C8142C63C04800B4116B /* Controller */,
+			);
+			path = PurchaseTypViewController;
+			sourceTree = "<group>";
+		};
+		6351C80F2C63BFFC00B4116B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6351C8102C63C00200B4116B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6351C8122C63C01E00B4116B /* PurchaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6351C8112C63C00600B4116B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6351C8142C63C04800B4116B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6351C8152C63C04F00B4116B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6351C8182C63C06E00B4116B /* PurchaseTypeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6351C8162C63C05C00B4116B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		639DB2832C62352E0086A210 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +184,8 @@
 		63DB54172C62327000FE34CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6351C80E2C63BFE900B4116B /* PurchaseTypViewController */,
+				6351C80D2C63BFD500B4116B /* PurchaseViewController */,
 				63DB541A2C6232E400FE34CC /* GeneralViewController */,
 				63DB541E2C62336000FE34CC /* SearchViewController */,
 				639DB2842C62352E0086A210 /* HistoryViewController */,
@@ -321,8 +391,10 @@
 				63DB54062C62307500FE34CC /* GeneralViewController.swift in Sources */,
 				63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */,
 				63DB54242C62341300FE34CC /* SearchViewController.swift in Sources */,
+				6351C8192C63C06E00B4116B /* PurchaseTypeViewController.swift in Sources */,
 				639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */,
 				63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */,
+				6351C8132C63C01E00B4116B /* PurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +551,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PurchaseDiaryApp/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -509,6 +582,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PurchaseDiaryApp/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

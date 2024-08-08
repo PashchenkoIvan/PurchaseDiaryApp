@@ -1,15 +1,20 @@
 //
-//  HistoryViewController.swift
+//  PurchaseTypeViewController.swift
 //  PurchaseDiaryApp
 //
-//  Created by Пащенко Иван on 06.08.2024.
+//  Created by Пащенко Иван on 07.08.2024.
 //
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class PurchaseTypeViewController: UIViewController {
 
+    @IBOutlet weak var totalCountLabel: UILabel!
+    @IBOutlet weak var totalSpentLabel: UILabel!
+    @IBOutlet weak var groupNameLabel: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

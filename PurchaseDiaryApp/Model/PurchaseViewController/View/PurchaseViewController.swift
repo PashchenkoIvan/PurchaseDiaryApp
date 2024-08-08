@@ -1,15 +1,23 @@
 //
-//  HistoryViewController.swift
+//  PurchaseViewController.swift
 //  PurchaseDiaryApp
 //
-//  Created by Пащенко Иван on 06.08.2024.
+//  Created by Пащенко Иван on 07.08.2024.
 //
 
 import UIKit
+import MapKit
 
-class HistoryViewController: UIViewController {
+class PurchaseViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var purchaseNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var purchasePriceLabel: UIView!
+    @IBOutlet weak var purchaseDateLabel: UILabel!
+    @IBOutlet weak var purchaseGroupLabel: UILabel!
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
