@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PurchaseTypeViewController: UIViewController {
+class PurchaseCategoryViewController: UIViewController {
 
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var totalSpentLabel: UILabel!
