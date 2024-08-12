@@ -11,6 +11,9 @@
 		6351C8192C63C06E00B4116B /* PurchaseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8182C63C06E00B4116B /* PurchaseCategoryViewController.swift */; };
 		6351C81C2C64EDFD00B4116B /* PurchaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C81B2C64EDFD00B4116B /* PurchaseObject.swift */; };
 		6351C81F2C651C7B00B4116B /* CategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C81E2C651C7B00B4116B /* CategoryInfo.swift */; };
+		6351C8212C651ED200B4116B /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8202C651ED200B4116B /* HistoryController.swift */; };
+		6351C8262C651FC400B4116B /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8242C651FC400B4116B /* PurchaseTableViewCell.swift */; };
+		6351C8272C651FC400B4116B /* PurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6351C8252C651FC400B4116B /* PurchaseTableViewCell.xib */; };
 		639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DB2822C62352E0086A210 /* HistoryViewController.swift */; };
 		63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54012C62307500FE34CC /* AppDelegate.swift */; };
 		63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54032C62307500FE34CC /* SceneDelegate.swift */; };
@@ -28,6 +31,9 @@
 		6351C8182C63C06E00B4116B /* PurchaseCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCategoryViewController.swift; sourceTree = "<group>"; };
 		6351C81B2C64EDFD00B4116B /* PurchaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseObject.swift; sourceTree = "<group>"; };
 		6351C81E2C651C7B00B4116B /* CategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInfo.swift; sourceTree = "<group>"; };
+		6351C8202C651ED200B4116B /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		6351C8242C651FC400B4116B /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
+		6351C8252C651FC400B4116B /* PurchaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseTableViewCell.xib; sourceTree = "<group>"; };
 		639DB2822C62352E0086A210 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		63DB53FE2C62307500FE34CC /* PurchaseDiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseDiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB54012C62307500FE34CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +143,23 @@
 			path = Structs;
 			sourceTree = "<group>";
 		};
+		6351C8222C651F8C00B4116B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6351C8232C651F9300B4116B /* PurchaseCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6351C8232C651F9300B4116B /* PurchaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				6351C8242C651FC400B4116B /* PurchaseTableViewCell.swift */,
+				6351C8252C651FC400B4116B /* PurchaseTableViewCell.xib */,
+			);
+			path = PurchaseCell;
+			sourceTree = "<group>";
+		};
 		639DB2832C62352E0086A210 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +188,7 @@
 		639DB2872C6235440086A210 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6351C8202C651ED200B4116B /* HistoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +215,7 @@
 		63DB54002C62307500FE34CC /* PurchaseDiaryApp */ = {
 			isa = PBXGroup;
 			children = (
+				6351C8222C651F8C00B4116B /* Cells */,
 				63DB54172C62327000FE34CC /* Model */,
 				63DB54182C62327400FE34CC /* View */,
 				63DB54192C62327A00FE34CC /* Controller */,
@@ -375,6 +400,7 @@
 				63DB540B2C62307700FE34CC /* Assets.xcassets in Resources */,
 				63DB540E2C62307700FE34CC /* Base in Resources */,
 				63DB54162C62313800FE34CC /* Podfile in Resources */,
+				6351C8272C651FC400B4116B /* PurchaseTableViewCell.xib in Resources */,
 				63DB54092C62307500FE34CC /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,10 +454,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6351C8212C651ED200B4116B /* HistoryController.swift in Sources */,
 				63DB54062C62307500FE34CC /* GeneralViewController.swift in Sources */,
 				63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */,
 				63DB54242C62341300FE34CC /* SearchViewController.swift in Sources */,
 				6351C8192C63C06E00B4116B /* PurchaseCategoryViewController.swift in Sources */,
+				6351C8262C651FC400B4116B /* PurchaseTableViewCell.swift in Sources */,
 				639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */,
 				6351C81F2C651C7B00B4116B /* CategoryInfo.swift in Sources */,
 				6351C81C2C64EDFD00B4116B /* PurchaseObject.swift in Sources */,
