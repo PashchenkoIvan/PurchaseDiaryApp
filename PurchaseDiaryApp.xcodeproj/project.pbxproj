@@ -14,7 +14,12 @@
 		6351C8212C651ED200B4116B /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8202C651ED200B4116B /* HistoryController.swift */; };
 		6351C8262C651FC400B4116B /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6351C8242C651FC400B4116B /* PurchaseTableViewCell.swift */; };
 		6351C8272C651FC400B4116B /* PurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6351C8252C651FC400B4116B /* PurchaseTableViewCell.xib */; };
+		639B5D982C6CA6ED003EE10C /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B5D972C6CA6ED003EE10C /* BiometricAuthenticator.swift */; };
 		639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DB2822C62352E0086A210 /* HistoryViewController.swift */; };
+		63B47A4D2C6C0BD300582037 /* MapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B47A4C2C6C0BD300582037 /* MapKit.swift */; };
+		63B47A4F2C6C0C2800582037 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B47A4E2C6C0C2800582037 /* PickerView.swift */; };
+		63B47A522C6C111500582037 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B47A512C6C111500582037 /* NavigationController.swift */; };
+		63B47A552C6C11D000582037 /* NewPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B47A542C6C11D000582037 /* NewPurchase.swift */; };
 		63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54012C62307500FE34CC /* AppDelegate.swift */; };
 		63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54032C62307500FE34CC /* SceneDelegate.swift */; };
 		63DB54062C62307500FE34CC /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54052C62307500FE34CC /* GeneralViewController.swift */; };
@@ -23,6 +28,14 @@
 		63DB540E2C62307700FE34CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 63DB540D2C62307700FE34CC /* Base */; };
 		63DB54162C62313800FE34CC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 63DB54152C62313800FE34CC /* Podfile */; };
 		63DB54242C62341300FE34CC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB54232C62341300FE34CC /* SearchViewController.swift */; };
+		63F6746B2C6FCA1000D9616D /* PurchaseCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6746A2C6FCA1000D9616D /* PurchaseCategoryController.swift */; };
+		63F6746F2C6FCC4200D9616D /* PurchaseCategoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6746E2C6FCC4200D9616D /* PurchaseCategoryTableView.swift */; };
+		63F674722C6FCCBD00D9616D /* GeneralTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674712C6FCCBD00D9616D /* GeneralTableView.swift */; };
+		63F674742C6FCCE900D9616D /* GeneralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674732C6FCCE900D9616D /* GeneralController.swift */; };
+		63F674762C6FCE3100D9616D /* Functionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674752C6FCE3100D9616D /* Functionals.swift */; };
+		63FC027B2C6BAB6C009154C9 /* AddPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC027A2C6BAB6C009154C9 /* AddPurchaseViewController.swift */; };
+		63FC027F2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FC027E2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib */; };
+		63FC02802C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC027D2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift */; };
 		641FD9B0B1E9FFBF78D4A5E5 /* Pods_PurchaseDiaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8E9BE76E2B7E22E152B936 /* Pods_PurchaseDiaryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +47,12 @@
 		6351C8202C651ED200B4116B /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 		6351C8242C651FC400B4116B /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
 		6351C8252C651FC400B4116B /* PurchaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseTableViewCell.xib; sourceTree = "<group>"; };
+		639B5D972C6CA6ED003EE10C /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
 		639DB2822C62352E0086A210 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		63B47A4C2C6C0BD300582037 /* MapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKit.swift; sourceTree = "<group>"; };
+		63B47A4E2C6C0C2800582037 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		63B47A512C6C111500582037 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		63B47A542C6C11D000582037 /* NewPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPurchase.swift; sourceTree = "<group>"; };
 		63DB53FE2C62307500FE34CC /* PurchaseDiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseDiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DB54012C62307500FE34CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63DB54032C62307500FE34CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +63,14 @@
 		63DB540F2C62307700FE34CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63DB54152C62313800FE34CC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		63DB54232C62341300FE34CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		63F6746A2C6FCA1000D9616D /* PurchaseCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCategoryController.swift; sourceTree = "<group>"; };
+		63F6746E2C6FCC4200D9616D /* PurchaseCategoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCategoryTableView.swift; sourceTree = "<group>"; };
+		63F674712C6FCCBD00D9616D /* GeneralTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableView.swift; sourceTree = "<group>"; };
+		63F674732C6FCCE900D9616D /* GeneralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralController.swift; sourceTree = "<group>"; };
+		63F674752C6FCE3100D9616D /* Functionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functionals.swift; sourceTree = "<group>"; };
+		63FC027A2C6BAB6C009154C9 /* AddPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseViewController.swift; sourceTree = "<group>"; };
+		63FC027D2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		63FC027E2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		896FBA5A8F76794649579B0B /* Pods-PurchaseDiaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseDiaryApp.release.xcconfig"; path = "Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp.release.xcconfig"; sourceTree = "<group>"; };
 		B0820CED146A9A0833C2F2EF /* Pods-PurchaseDiaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseDiaryApp.debug.xcconfig"; path = "Target Support Files/Pods-PurchaseDiaryApp/Pods-PurchaseDiaryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BF8E9BE76E2B7E22E152B936 /* Pods_PurchaseDiaryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchaseDiaryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +133,8 @@
 		6351C8142C63C04800B4116B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63F6746C2C6FCC1E00D9616D /* Extensions */,
+				63F6746A2C6FCA1000D9616D /* PurchaseCategoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +174,7 @@
 		6351C8222C651F8C00B4116B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				63FC027C2C6BEE58009154C9 /* PurchaseCategoryCell */,
 				6351C8232C651F9300B4116B /* PurchaseCell */,
 			);
 			path = Cells;
@@ -158,6 +187,14 @@
 				6351C8252C651FC400B4116B /* PurchaseTableViewCell.xib */,
 			);
 			path = PurchaseCell;
+			sourceTree = "<group>";
+		};
+		639B5D962C6CA6D9003EE10C /* BiometricAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				639B5D972C6CA6ED003EE10C /* BiometricAuthenticator.swift */,
+			);
+			path = BiometricAuthenticator;
 			sourceTree = "<group>";
 		};
 		639DB2832C62352E0086A210 /* View */ = {
@@ -191,6 +228,14 @@
 				6351C8202C651ED200B4116B /* HistoryController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		63B47A502C6C110100582037 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				63B47A512C6C111500582037 /* NavigationController.swift */,
+			);
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		63DB53F52C62307500FE34CC = {
@@ -230,6 +275,7 @@
 		63DB54172C62327000FE34CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63FC02762C6BAB32009154C9 /* AddPurchaseViewController */,
 				6351C80E2C63BFE900B4116B /* PurchaseCategoryViewController */,
 				6351C80D2C63BFD500B4116B /* PurchaseViewController */,
 				63DB541A2C6232E400FE34CC /* GeneralViewController */,
@@ -251,6 +297,8 @@
 		63DB54192C62327A00FE34CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				639B5D962C6CA6D9003EE10C /* BiometricAuthenticator */,
+				63B47A502C6C110100582037 /* NavigationController */,
 				6351C81A2C64EDED00B4116B /* RealmHelper */,
 			);
 			path = Controller;
@@ -269,6 +317,8 @@
 		63DB541B2C6232F000FE34CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63F674702C6FCCB000D9616D /* Extensions */,
+				63F674732C6FCCE900D9616D /* GeneralController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +368,67 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		63F6746C2C6FCC1E00D9616D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63F6746E2C6FCC4200D9616D /* PurchaseCategoryTableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63F674702C6FCCB000D9616D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63F674712C6FCCBD00D9616D /* GeneralTableView.swift */,
+				63F674752C6FCE3100D9616D /* Functionals.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63FC02762C6BAB32009154C9 /* AddPurchaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63FC02792C6BAB49009154C9 /* Model */,
+				63FC02782C6BAB45009154C9 /* View */,
+				63FC02772C6BAB3F009154C9 /* Controller */,
+			);
+			path = AddPurchaseViewController;
+			sourceTree = "<group>";
+		};
+		63FC02772C6BAB3F009154C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63B47A4E2C6C0C2800582037 /* PickerView.swift */,
+				63B47A4C2C6C0BD300582037 /* MapKit.swift */,
+				63B47A542C6C11D000582037 /* NewPurchase.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63FC02782C6BAB45009154C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63FC027A2C6BAB6C009154C9 /* AddPurchaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63FC02792C6BAB49009154C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63FC027C2C6BEE58009154C9 /* PurchaseCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				63FC027D2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift */,
+				63FC027E2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib */,
+			);
+			path = PurchaseCategoryCell;
 			sourceTree = "<group>";
 		};
 		7C3EAE4217DE2C1DC4F1EAAA /* Frameworks */ = {
@@ -397,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FC027F2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib in Resources */,
 				63DB540B2C62307700FE34CC /* Assets.xcassets in Resources */,
 				63DB540E2C62307700FE34CC /* Base in Resources */,
 				63DB54162C62313800FE34CC /* Podfile in Resources */,
@@ -455,15 +567,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				6351C8212C651ED200B4116B /* HistoryController.swift in Sources */,
+				63F6746F2C6FCC4200D9616D /* PurchaseCategoryTableView.swift in Sources */,
+				63F674742C6FCCE900D9616D /* GeneralController.swift in Sources */,
 				63DB54062C62307500FE34CC /* GeneralViewController.swift in Sources */,
+				63F674762C6FCE3100D9616D /* Functionals.swift in Sources */,
+				639B5D982C6CA6ED003EE10C /* BiometricAuthenticator.swift in Sources */,
+				63FC027B2C6BAB6C009154C9 /* AddPurchaseViewController.swift in Sources */,
 				63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */,
 				63DB54242C62341300FE34CC /* SearchViewController.swift in Sources */,
 				6351C8192C63C06E00B4116B /* PurchaseCategoryViewController.swift in Sources */,
 				6351C8262C651FC400B4116B /* PurchaseTableViewCell.swift in Sources */,
 				639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */,
+				63F674722C6FCCBD00D9616D /* GeneralTableView.swift in Sources */,
+				63B47A4F2C6C0C2800582037 /* PickerView.swift in Sources */,
+				63B47A522C6C111500582037 /* NavigationController.swift in Sources */,
+				63FC02802C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift in Sources */,
+				63B47A4D2C6C0BD300582037 /* MapKit.swift in Sources */,
 				6351C81F2C651C7B00B4116B /* CategoryInfo.swift in Sources */,
 				6351C81C2C64EDFD00B4116B /* PurchaseObject.swift in Sources */,
+				63F6746B2C6FCA1000D9616D /* PurchaseCategoryController.swift in Sources */,
 				63DB54042C62307500FE34CC /* SceneDelegate.swift in Sources */,
+				63B47A552C6C11D000582037 /* NewPurchase.swift in Sources */,
 				6351C8132C63C01E00B4116B /* PurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

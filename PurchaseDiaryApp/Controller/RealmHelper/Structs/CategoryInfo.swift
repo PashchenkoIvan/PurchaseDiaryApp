@@ -23,7 +23,7 @@ let categoryArray: [CategoryInfo] = [
     CategoryInfo.init(id: 6, name: "Health", image: UIImage(systemName: "stethoscope.circle.fill")!),
     CategoryInfo.init(id: 7, name: "Travel", image: UIImage(systemName: "airplane.circle.fill")!),
     CategoryInfo.init(id: 8, name: "Education", image: UIImage(systemName: "book.circle.fill")!),
-    CategoryInfo.init(id: 9, name: "Children", image: UIImage(systemName: "igure.and.child.holdinghands")!),
+    CategoryInfo.init(id: 9, name: "Children", image: UIImage(systemName: "figure.and.child.holdinghands")!),
     CategoryInfo.init(id: 10, name: "Pets", image: UIImage(systemName: "dog.circle.fill")!),
     CategoryInfo.init(id: 11, name: "Electronics", image: UIImage(systemName: "visionpro.circle.fill")!),
     CategoryInfo.init(id: 12, name: "Debts and Loans", image: UIImage(systemName: "creditcard.circle.fill")!),

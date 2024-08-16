@@ -8,28 +8,36 @@
 import UIKit
 
 class PurchaseCategoryViewController: UIViewController {
-
+    
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var totalSpentLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
+    var categoryData: CategoryInfo = CategoryInfo(id: 0, name: "", image: UIImage(systemName: "minus")!)
+    var purchases: [PurchaseObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let nib = UINib(nibName: "PurchaseTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "PurchaseTableViewCell")
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let results = PurchaseObject.getPurchases(byCategory: categoryData.id)
+        purchases = Array(results)
+        
+        categoryLabel.text = categoryData.name
+        
+        totalCountLabel.text = "\(purchases.count)"
+        totalSpentLabel.text = "\(PurchaseCategoryController.calcTotalSpent(purchases: purchases))"
+        
+        self.navigationItem.title = categoryData.name
     }
-    */
-
+    
 }

@@ -13,7 +13,16 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "PurchaseTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "PurchaseTableViewCell")
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
     }
 }
 
@@ -25,7 +34,7 @@ extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let purchases = PurchaseObject.getAllPurchases()
-        let currentPurchase = purchases[purchases.count - indexPath.row]
+        let currentPurchase = purchases[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseTableViewCell", for: indexPath) as! PurchaseTableViewCell
         let categoryData = categoryArray.first { $0.id == currentPurchase.category }

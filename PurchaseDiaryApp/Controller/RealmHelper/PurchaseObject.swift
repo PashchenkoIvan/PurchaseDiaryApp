@@ -15,32 +15,24 @@ class PurchaseObject: Object {
     @Persisted var cost: Double
     @Persisted var timestamp: Date
     @Persisted var category: Int16
-    @Persisted var latitude: Double // Широта
-    @Persisted var longitude: Double // Долгота
-    @Persisted var purchaseDescription: String? // Описание (опциональное)
+    @Persisted var latitude: Double
+    @Persisted var longitude: Double
+    @Persisted var purchaseDescription: String?
 }
 
 extension PurchaseObject {
-    static func getAllPurchases() -> [PurchaseObject] {
-        let realm = try! Realm()
-        return Array(realm.objects(PurchaseObject.self))
-    }
-}
-
-extension PurchaseObject {
-    static func addPurchase(text: String? = nil, cost: Double = 0.0, category: Int16, latitude: Double? = nil, longitude: Double? = nil, description: String? = "Not given") {
+    static func create(text: String, cost: Double, category: Int16, latitude: Double, longitude: Double, description: String?) {
         let newPurchase = PurchaseObject()
-
-        newPurchase.text = text ?? "Not given"
+        newPurchase.text = text
         newPurchase.cost = cost
         newPurchase.timestamp = Date()
         newPurchase.category = category
-        newPurchase.latitude = latitude ?? 0.0
-        newPurchase.longitude = longitude ?? 0.0
-        newPurchase.purchaseDescription = description ?? "Not given"
-
+        newPurchase.latitude = latitude
+        newPurchase.longitude = longitude
+        newPurchase.purchaseDescription = description
+        
+        // Get the default Realm instance
         let realm = try! Realm()
-
         try! realm.write {
             realm.add(newPurchase)
         }
@@ -48,17 +40,23 @@ extension PurchaseObject {
 }
 
 extension PurchaseObject {
-    static func getPurchase(withId id: ObjectId) -> PurchaseObject? {
+    static func getAllPurchases() -> Results<PurchaseObject> {
         let realm = try! Realm()
-        return realm.object(ofType: PurchaseObject.self, forPrimaryKey: id)
+        return realm.objects(PurchaseObject.self)
     }
 }
 
 extension PurchaseObject {
-    static func getCategoryPurchases(withCategory category: Int16) -> [PurchaseObject] {
+    static func getPurchases(byCategory category: Int16) -> Results<PurchaseObject> {
         let realm = try! Realm()
-        let results = realm.objects(PurchaseObject.self).filter("category == %@", category)
-        return Array(results)
+        return realm.objects(PurchaseObject.self).filter("category == %@", category)
+    }
+}
+
+extension PurchaseObject {
+    static func getPurchase(by id: ObjectId) -> PurchaseObject? {
+        let realm = try! Realm()
+        return realm.object(ofType: PurchaseObject.self, forPrimaryKey: id)
     }
 }
 
