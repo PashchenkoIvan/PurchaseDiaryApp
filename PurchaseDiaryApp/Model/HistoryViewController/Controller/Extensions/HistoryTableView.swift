@@ -29,9 +29,10 @@ extension HistoryViewController: UITableViewDataSource {
 
 extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let reversedIndexPath = IndexPath(row: purchases.count - indexPath.row - 1, section: indexPath.section)
         let purchaseViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PurchaseViewController") as! PurchaseViewController
         
-        let currentPurchase = purchases[indexPath.row]
+        let currentPurchase = purchases[reversedIndexPath.row]
         
         let currentCategory = categoryArray.first{ $0.id == currentPurchase.category }
         
@@ -47,16 +48,17 @@ extension HistoryViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let reversedIndexPath = IndexPath(row: purchases.count - indexPath.row - 1, section: indexPath.section)
         let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
             let alertController = UIAlertController(title: "Deletion", message: "Are you sure you want to delete this purchase?", preferredStyle: .alert)
             
             let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { _ in
                 BiometricAuthenticator.authenticateWithBiometrics(reason: "Delete purchase") { success in
                     if success {
-                        let currentPurchase = self.purchases[indexPath.row]
+                        let currentPurchase = self.purchases[reversedIndexPath.row]
                         PurchaseObject.deletePurchase(withId: currentPurchase.id)
                         
-                        self.purchases.remove(at: indexPath.row)
+                        self.purchases.remove(at: reversedIndexPath.row)
                         self.tableView.reloadData()
                         
                         completionHandler(true)
