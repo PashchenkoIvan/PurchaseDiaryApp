@@ -47,6 +47,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C98-oS-jfw">
                                 <rect key="frame" x="0.0" y="1.9999999999999982" width="24" height="16"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total_spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1k-fG-6QE">
                                 <rect key="frame" x="28.999999999999996" y="3.3333333333333366" width="59.666666666666657" height="13.333333333333336"/>
@@ -71,6 +72,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kXK-QS-PtG">
                                 <rect key="frame" x="0.0" y="1.6666666666666661" width="23" height="18"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total_count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNn-JP-DXr">
                                 <rect key="frame" x="27.999999999999996" y="3.3333333333333366" width="59.666666666666657" height="13.333333333333336"/>
@@ -120,6 +122,12 @@
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

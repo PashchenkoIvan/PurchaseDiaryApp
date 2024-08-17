@@ -8,41 +8,32 @@
 import Foundation
 import UIKit
 
-extension PurchaseCategoryViewController: UITableViewDataSource {
+extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return purchases.count
+        return PurchaseCellsHelper.isEmptyTable(items: purchases).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reversedIndexPath = IndexPath(row: purchases.count - indexPath.row - 1, section: indexPath.section)
-        let currentPurchase = purchases[reversedIndexPath.row]
-        let currentCategory = categoryArray.first { $0.id == categoryData.id }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseTableViewCell", for: indexPath) as! PurchaseTableViewCell
-        
-        cell.cellImageView.image = currentCategory?.image
-        cell.cellImageView.tintColor = currentCategory?.color
-        cell.purchaseCategoryName.text = currentCategory?.name
-        cell.purchaseDateLabel.text = "\(currentPurchase.timestamp)"
-        cell.purchasePriceLabel.text = "\(currentPurchase.cost)"
-        cell.purchaseNameLabel.text = currentPurchase.text
-        
-        return cell
+        if purchases.count == 0 {
+            return PurchaseCellsHelper.returnEmptyTableCell()
+        } else {
+            let reversedIndexPath = IndexPath(row: purchases.count - indexPath.row - 1, section: indexPath.section)
+            let currentPurchase = purchases[reversedIndexPath.row]
+            let categoryData = categoryArray.first { $0.id == currentPurchase.category }
+            
+            return PurchaseCellsHelper.returnPurchaseTableCell(indexPath: indexPath, tableView: tableView, currentPurchase: currentPurchase, categoryData: categoryData)
+        }
     }
-    
-    
 }
 
-extension PurchaseCategoryViewController: UITableViewDelegate {
-    
+extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let purchaseViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PurchaseViewController") as! PurchaseViewController
         
         let currentPurchase = purchases[indexPath.row]
         
         let currentCategory = categoryArray.first{ $0.id == currentPurchase.category }
-        
-        print(currentPurchase)
         
         purchaseViewController.name = currentPurchase.text
         purchaseViewController.descr = currentPurchase.purchaseDescription ?? ""
@@ -62,11 +53,12 @@ extension PurchaseCategoryViewController: UITableViewDelegate {
             let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { _ in
                 BiometricAuthenticator.authenticateWithBiometrics(reason: "Delete purchase") { success in
                     if success {
-                        PurchaseObject.deletePurchase(withId: self.purchases[indexPath.row].id)
+                        let currentPurchase = self.purchases[indexPath.row]
+                        PurchaseObject.deletePurchase(withId: currentPurchase.id)
+                        
                         self.purchases.remove(at: indexPath.row)
                         self.tableView.reloadData()
-                        self.totalCountLabel.text = "\(self.purchases.count)"
-                        self.totalSpentLabel.text = "\(PurchaseCategoryController.calcTotalSpent(purchases: self.purchases))"
+                        
                         completionHandler(true)
                     }
                 }

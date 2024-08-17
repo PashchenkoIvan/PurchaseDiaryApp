@@ -34,6 +34,11 @@ class GeneralViewController: UIViewController {
         
         notEmptyCategories = GeneralController.updateNotEmptyCategoriesFunc()
         
+        let purchases = Array(PurchaseObject.getAllPurchases())
+        
+        totalCountLabel.text = "\(purchases.count)"
+        totalSpentLabel.text = "\(PurchaseCellsHelper.calcTotalSpent(item: purchases))"
+        
         tableView.reloadData()
     }
 }

@@ -33,7 +33,7 @@ extension AddPurchaseViewController {
         annotation.title = "Purchase place"
         mapKitView.addAnnotation(annotation)
         
-        // Print the coordinates to the console
-        print("Latitude: \(coordinate.latitude), Longitude: \(coordinate.longitude)")
+        latitude = coordinate.latitude
+        longitude = coordinate.longitude
     }
 }

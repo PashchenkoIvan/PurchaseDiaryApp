@@ -33,6 +33,8 @@
 		63F674722C6FCCBD00D9616D /* GeneralTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674712C6FCCBD00D9616D /* GeneralTableView.swift */; };
 		63F674742C6FCCE900D9616D /* GeneralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674732C6FCCE900D9616D /* GeneralController.swift */; };
 		63F674762C6FCE3100D9616D /* Functionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674752C6FCE3100D9616D /* Functionals.swift */; };
+		63F674792C6FD96300D9616D /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F674782C6FD96300D9616D /* HistoryTableView.swift */; };
+		63F6747F2C6FDD6400D9616D /* PurchaseCellsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6747E2C6FDD6400D9616D /* PurchaseCellsHelper.swift */; };
 		63FC027B2C6BAB6C009154C9 /* AddPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC027A2C6BAB6C009154C9 /* AddPurchaseViewController.swift */; };
 		63FC027F2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FC027E2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib */; };
 		63FC02802C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FC027D2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift */; };
@@ -68,6 +70,8 @@
 		63F674712C6FCCBD00D9616D /* GeneralTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableView.swift; sourceTree = "<group>"; };
 		63F674732C6FCCE900D9616D /* GeneralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralController.swift; sourceTree = "<group>"; };
 		63F674752C6FCE3100D9616D /* Functionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functionals.swift; sourceTree = "<group>"; };
+		63F674782C6FD96300D9616D /* HistoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableView.swift; sourceTree = "<group>"; };
+		63F6747E2C6FDD6400D9616D /* PurchaseCellsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCellsHelper.swift; sourceTree = "<group>"; };
 		63FC027A2C6BAB6C009154C9 /* AddPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPurchaseViewController.swift; sourceTree = "<group>"; };
 		63FC027D2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		63FC027E2C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseCategoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 		639DB2872C6235440086A210 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63F674772C6FD95800D9616D /* Extensions */,
 				6351C8202C651ED200B4116B /* HistoryController.swift */,
 			);
 			path = Controller;
@@ -260,7 +265,6 @@
 		63DB54002C62307500FE34CC /* PurchaseDiaryApp */ = {
 			isa = PBXGroup;
 			children = (
-				6351C8222C651F8C00B4116B /* Cells */,
 				63DB54172C62327000FE34CC /* Model */,
 				63DB54182C62327400FE34CC /* View */,
 				63DB54192C62327A00FE34CC /* Controller */,
@@ -275,6 +279,7 @@
 		63DB54172C62327000FE34CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6351C8222C651F8C00B4116B /* Cells */,
 				63FC02762C6BAB32009154C9 /* AddPurchaseViewController */,
 				6351C80E2C63BFE900B4116B /* PurchaseCategoryViewController */,
 				6351C80D2C63BFD500B4116B /* PurchaseViewController */,
@@ -297,6 +302,7 @@
 		63DB54192C62327A00FE34CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				63F6747D2C6FDD4800D9616D /* PurchaseCellsHelper */,
 				639B5D962C6CA6D9003EE10C /* BiometricAuthenticator */,
 				63B47A502C6C110100582037 /* NavigationController */,
 				6351C81A2C64EDED00B4116B /* RealmHelper */,
@@ -385,6 +391,22 @@
 				63F674752C6FCE3100D9616D /* Functionals.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63F674772C6FD95800D9616D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63F674782C6FD96300D9616D /* HistoryTableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63F6747D2C6FDD4800D9616D /* PurchaseCellsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				63F6747E2C6FDD6400D9616D /* PurchaseCellsHelper.swift */,
+			);
+			path = PurchaseCellsHelper;
 			sourceTree = "<group>";
 		};
 		63FC02762C6BAB32009154C9 /* AddPurchaseViewController */ = {
@@ -574,11 +596,13 @@
 				639B5D982C6CA6ED003EE10C /* BiometricAuthenticator.swift in Sources */,
 				63FC027B2C6BAB6C009154C9 /* AddPurchaseViewController.swift in Sources */,
 				63DB54022C62307500FE34CC /* AppDelegate.swift in Sources */,
+				63F6747F2C6FDD6400D9616D /* PurchaseCellsHelper.swift in Sources */,
 				63DB54242C62341300FE34CC /* SearchViewController.swift in Sources */,
 				6351C8192C63C06E00B4116B /* PurchaseCategoryViewController.swift in Sources */,
 				6351C8262C651FC400B4116B /* PurchaseTableViewCell.swift in Sources */,
 				639DB2852C62352E0086A210 /* HistoryViewController.swift in Sources */,
 				63F674722C6FCCBD00D9616D /* GeneralTableView.swift in Sources */,
+				63F674792C6FD96300D9616D /* HistoryTableView.swift in Sources */,
 				63B47A4F2C6C0C2800582037 /* PickerView.swift in Sources */,
 				63B47A522C6C111500582037 /* NavigationController.swift in Sources */,
 				63FC02802C6BEE7E009154C9 /* PurchaseCategoryTableViewCell.swift in Sources */,

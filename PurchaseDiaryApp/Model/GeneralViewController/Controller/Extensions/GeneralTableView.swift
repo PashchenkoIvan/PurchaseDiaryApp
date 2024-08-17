@@ -9,16 +9,17 @@ import Foundation
 import UIKit
 
 extension GeneralViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if notEmptyCategories.count == 0 {
-            return 1
-        } else {
-            return notEmptyCategories.count
-        }
+        return PurchaseCellsHelper.isEmptyTable(items: notEmptyCategories).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if notEmptyCategories.count != 0 {
+        switch PurchaseCellsHelper.isEmptyTable(items: notEmptyCategories).isEmpty {
+            
+        case true:
+            return PurchaseCellsHelper.returnEmptyTableCell()
+        case false:
             let purchases = PurchaseObject.getPurchases(byCategory: notEmptyCategories[indexPath.row].id)
             
             var totalSpent = 0.0
@@ -29,22 +30,14 @@ extension GeneralViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PurchaseCategoryTableViewCell", for: indexPath) as! PurchaseCategoryTableViewCell
             
             cell.categoryImageView.image = notEmptyCategories[indexPath.row].image
+            cell.categoryImageView.tintColor = notEmptyCategories[indexPath.row].color
             cell.categoryNameTextField.text = notEmptyCategories[indexPath.row].name
             cell.categorySpentTextField.text = "\(totalSpent)"
             cell.categoryCountTextField.text = "\(purchases.count)"
             
             return cell
-        } else {
-            let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: nil)
-            
-            cell.textLabel?.text = "No one purchase"
-            cell.textLabel?.textAlignment = .center
-            cell.textLabel?.textColor = .lightGray
-            
-            return cell
         }
     }
-    
 }
 
 extension GeneralViewController: UITableViewDelegate {

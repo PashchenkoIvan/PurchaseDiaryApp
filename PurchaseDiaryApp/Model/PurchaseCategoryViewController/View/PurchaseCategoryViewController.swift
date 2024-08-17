@@ -15,7 +15,7 @@ class PurchaseCategoryViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var categoryData: CategoryInfo = CategoryInfo(id: 0, name: "", image: UIImage(systemName: "minus")!)
+    var categoryData: CategoryInfo = CategoryInfo(id: 0, name: "", image: UIImage(systemName: "minus")!, color: UIColor.gray)
     var purchases: [PurchaseObject] = []
     
     override func viewDidLoad() {

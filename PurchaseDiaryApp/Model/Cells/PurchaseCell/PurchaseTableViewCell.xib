@@ -37,6 +37,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-z6-tjF">
                                         <rect key="frame" x="0.0" y="1.6666666666666643" width="15" height="12.000000000000004"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="vCh-Dt-4hF"/>
                                         </constraints>
@@ -65,6 +66,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ImJ-0s-bIe">
                                         <rect key="frame" x="0.0" y="1.6666666666666643" width="15" height="12.000000000000004"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="Tjg-eK-oYA"/>
                                         </constraints>
@@ -93,6 +95,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-i5-MFa">
                                         <rect key="frame" x="0.0" y="1.9999999999999982" width="15" height="11.000000000000004"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="vcB-83-7RG"/>
                                         </constraints>
@@ -159,8 +162,17 @@
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="folder" catalog="system" width="128" height="96"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

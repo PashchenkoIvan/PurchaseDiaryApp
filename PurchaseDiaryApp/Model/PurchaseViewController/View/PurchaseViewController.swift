@@ -9,19 +9,47 @@ import UIKit
 import MapKit
 
 class PurchaseViewController: UIViewController {
-
+    
     @IBOutlet weak var purchaseNameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var purchasePriceLabel: UIView!
-    @IBOutlet weak var purchaseDateLabel: UILabel!
-    @IBOutlet weak var purchaseCategory: UIView!
+    @IBOutlet weak var purchaseCategoryLabel: UILabel!
+    @IBOutlet weak var purchaseDatelabel: UILabel!
+    @IBOutlet weak var purchasePriceLabel: UILabel!
+    @IBOutlet weak var purchaseDescriptionLabel: UILabel!
     
     @IBOutlet weak var mapView: MKMapView!
+    
+    var name: String = ""
+    var descr: String = ""
+    var category: String = ""
+    var date: String = ""
+    var price: String = ""
+    
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.title = name
+        
+        self.purchaseNameLabel.text = name
+        self.purchasePriceLabel.text = price
+        self.purchaseDatelabel.text = date
+        self.purchaseCategoryLabel.text = category
+        self.purchaseDescriptionLabel.text = descr
+        
+        let locationCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let annotation = MKPointAnnotation()
+        annotation.title = purchaseNameLabel.text
+        annotation.coordinate = locationCoordinate
+        
+        mapView.addAnnotation(annotation)
     }
     
 
